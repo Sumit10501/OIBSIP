@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url(/img/bg_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+:root {
+    --primary-text-color: #168bff;
+    --secondray-text-color: #577592;
+    --padding-inline-section: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+p {
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondray-text-color);
+    line-height: 1.8rem;
+}
+
+
+ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+li {
+    font-size: 1.2rem;
+}
+
+.heading-text {
+    display: inline-block;
+    font-size: 46px;
+    font-weight: 600;
+    border-bottom: 8px solid var(--primary-text-color);
+}
+
+.primary-btn {
+    background-color: var(--primary-text-color);
+    border-radius: 6px;
+    font-weight: 500;
+    color: white;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px gray;
+    transition: 0.5s ease-out;
+}
+
+.primary-btn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid var(--primary-text-color);
+}
+
+.secondary-btn {
+    border: 2px solid var(--primary-text-color);
+    border-radius: 6px;
+    font-weight: 500;
+    color: black;
+    padding: 12px 24px;
+    transition: 0.5s ease-out;
+}
+
+.secondary-btn:hover {
+    background-color: var(--primary-text-color);
+    color: white;
+    box-shadow: 0 0 2px gray;
+
+}
+
+.contanier {
+    max-width: 1180px;
+    margin-inline: auto;
+}
+
+.section-gap {
+    margin-top: 75px;
+}
+
+.element-top-gap {
+    margin-top: 30px;
+}
+
+.element-between-gap {
+    margin-left: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Header */
+header {
+    position: sticky;
+    top: 0px;
+    background: white;
+    box-shadow: 4px 0px 5px grey;
+}
+
+.navbar {
+    justify-content: space-between;
+
+}
+
+.nav-items {
+    flex-basis: 730px;
+}
+
+.nav-items ul {
+    justify-content: end;
+    gap: 50px;
+}
+
+.hover-link {
+    background-color: none;
+    border-radius: none;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+
+}
+
+.hover-link:hover {
+    background-color: var(--primary-text-color);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+/* top-section */
+
+.top-section,
+.top-left-section,
+.top-right-section {
+    float: left;
+}
+
+.top-left-section {
+    width: 650px;
+    margin-top: 150px;
+}
+
+.top-right-section {
+    width: 530px;
+}
+
+.top-left-section .top-left-first-text {
+    font-size: 42px;
+}
+
+.top-left-section .top-left-sec-text {
+    font-size: 46px;
+    font-weight: 500;
+}
+
+.top-left-section .top-left-third-text {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+
+/* about section */
+
+.about-section,
+.about-img,
+.about-text {
+    float: left;
+}
+
+.about-img {
+    width: 530px;
+}
+
+.about-text {
+    width: 650px;
+    margin-top: 50px;
+}
+
+
+/* skill section */
+
+.skills-box {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.skills-box-items img {
+    width: 100px;
+    padding: 20px;
+    border: 2px solid #e6e6e6;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.skills-box-items img:hover {
+    border: none;
+    box-shadow: 5px 5px 7px 0 grey;
+}
+
+
+/* contact section */
+
+.contact-details,
+.contact-form {
+    width: 550px;
+}
+
+.contact-section i,
+span {
+    font-size: 28px;
+}
+
+.social-media-icons {
+    gap: 20px;
+}
+
+.social-media-icons i {
+    border: 2px solid #e6e6e6;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: 1px 1px 2px 0 grey;
+    transition: 0.5s;
+}
+
+.social-media-icons i:hover {
+    color: var(--primary-text-color);
+}
+
+.contact-form {
+    border: 2px solid #e6e6e6;
+    padding: 30px;
+}
+
+.contact-form p {
+    font-size: 28px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form input[type=text] {
+    width: 44%;
+    padding: 12px 12px;
+}
+
+.contact-form input[type=email] {
+    width: 94%;
+    padding: 12px 12px;
+}
+
+.contact-form textarea {
+    width: 94%;
+    height: 150px;
+    padding: 12px 12px;
+}
+
+
+/* footer section */
+
+footer {
+    height: auto;
+    background-color: var(--primary-text-color);
+}
+
+footer p {
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    color: white;
+}
+
